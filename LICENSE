@@ -2,20 +2,32 @@ MIT License
 
 Copyright (c) 2023 ErinTomorri
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. License Grant
+Licensor grants Licensee a non-exclusive, non-transferable, limited license to evaluate the software program ("Software") provided by Licensor solely for the purpose of testing and evaluation. This license allows Licensee to fully access and use the Software subject to the terms and conditions outlined in this Agreement.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+2. Payment
+Licensee acknowledges that full access to the source code of the Software will be granted upon receipt of full payment for the Software. Until such payment is made, the license remains limited to evaluation purposes only.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+3. Limitations
+a. Licensee agrees not to copy, modify, distribute, sell, lease, sublicense, or reverse engineer the Software in any way, except as expressly permitted in this Agreement.
+
+b. Licensee agrees not to remove, alter, or obscure any copyright, trademark, or proprietary notices included in the Software.
+
+c. Licensee understands that this license does not grant any ownership rights to the Software and that all intellectual property rights remain with Licensor.
+
+4. Term and Termination
+This Agreement shall commence on the effective date and will continue until terminated by either party. Either party may terminate this Agreement at any time by providing written notice to the other party.
+
+5. Confidentiality
+Licensee agrees to keep all information related to the Software, including but not limited to the source code, confidential and shall not disclose it to any third party without the prior written consent of Licensor. This obligation of confidentiality shall survive the termination of this Agreement.
+
+6. No Warranty
+The Software is provided "as is" without any warranty of any kind, either expressed or implied. Licensor disclaims all warranties, including but not limited to the warranties of merchantability and fitness for a particular purpose.
+
+7. Limitation of Liability
+Licensor shall not be liable for any direct, indirect, incidental, special, consequential, or exemplary damages arising out of or in connection with the use or performance of the Software, even if advised of the possibility of such damages.
+
+8. Governing Law
+This Agreement shall be governed by and construed in accordance with the laws of [Your Jurisdiction]. Any disputes arising under or in connection with this Agreement shall be subject to the exclusive jurisdiction of the courts of Ontario, Canada.
+
+By testing the Software, Licensee acknowledges and agrees to be bound by the terms and conditions of this Agreement.
