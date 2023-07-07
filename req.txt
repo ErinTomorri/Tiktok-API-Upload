@@ -1,0 +1,8 @@
+pip install pillow
+pip install moviepy
+pip install numpy
+pip install os
+pip install datetime
+pip install time
+pip install pandas
+pip install google-api-python-client

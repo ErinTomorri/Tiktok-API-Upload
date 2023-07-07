@@ -8,7 +8,6 @@ import requests
 
 def create(b, voice):
     text = ""
-    print (b)
     count1 = 0
     for num in range(len(b)):
         if voice == 0:
@@ -40,7 +39,16 @@ def create(b, voice):
             number = random.randint(1, len(os.listdir(folder_path)))
             file = "Images/Squidward/"+str(number)+".png"
             name = "Squidward"
-
+        elif voice == 5:
+            folder_path = "Images/Musk"
+            number = random.randint(1, len(os.listdir(folder_path)))
+            file = "Images/Musk/"+str(number)+".png"
+            name = "Musk"
+        elif voice == 6:
+            folder_path = "Images/Zuck"
+            number = random.randint(1, len(os.listdir(folder_path)))
+            file = "Images/Zuck/"+str(number)+".png"
+            name = "Zuck"
         # Open an Image
         img = Image.open(file)
         
@@ -84,6 +92,10 @@ def read():
                 voice = 3
             elif line.strip() == "Voice: Squidward":
                 voice = 4
+            elif line.strip() == "Voice: Musk":
+                voice = 5
+            elif line.strip() == "Voice: Zuck":
+                voice = 6
             if line.strip() == "":
                 count1 = 0
                 words.append(phrase)
@@ -94,8 +106,9 @@ def read():
     return words, voice
 
 def main():
-    c,voice = read()
-    create(c, voice)
-    print ("Done")
+    for num in range(10):
+        c,voice = read()
+        create(c, voice)
+        print ("Done")
 
 main()
