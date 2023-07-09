@@ -104,5 +104,5 @@ def main2():
         Tiktok(title,fileName)
         uTube(title,des,fileName)
 
-    os.remove()
+    os.remove(fileName)
 main2()
