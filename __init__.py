@@ -1,6 +1,6 @@
 from uploader import uploadVideo
 def main(titles, files):
-    session_id = "6f5103dc398878c486f17dd2b14774f4"
+    session_id = "19b196d7afa2f0eb5fb5f669a3cc7214"
     file = files
     title = titles
     tags = ["memerap", "squidwardrap", "mrkrabsrap", "planktonrap", "spongebob"]

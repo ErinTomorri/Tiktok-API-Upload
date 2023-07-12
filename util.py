@@ -76,7 +76,7 @@ def assertSuccess(url, r):
 
 def log(name):
     print(f'============{name}===========')
-# 获取真实标签
+#获取真实标签
 
 
 def getTagsExtra(title, tags, users, session, url_prefix):

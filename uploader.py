@@ -2,9 +2,9 @@ import requests
 import json
 import time
 import datetime
-from x_bogus_ import get_x_bogus
 from urllib.parse import urlencode
 
+from x_bogus_ import get_x_bogus
 from util import assertSuccess, printError, getTagsExtra, uploadToTikTok, log, getCreationId
 
 
@@ -41,6 +41,7 @@ def uploadVideo(session_id, video, title, tags, users=[], url_prefix="www", sche
 	try:
 		tempInfo = r.json()['project']
 	except KeyError:
+		print(r.json())
 		print(f"[-] An error occured while reaching {url}")
 		print("[-] Please try to change the --url_server argument to the adapted prefix for your account")
 		return False
@@ -96,7 +97,7 @@ def uploadVideo(session_id, video, title, tags, users=[], url_prefix="www", sche
 	if schedule_time and schedule_time - datetime.datetime.now().timestamp() > 900:  # 900s = 15min
 		data["upload_param"]["schedule_time"] = schedule_time
 	postQuery['X-Bogus'] = get_x_bogus(urlencode(postQuery), json.dumps(data, separators=(',', ':')), UA)
-	url = 'https://www.tiktok.com/api/v1/web/project/post/'
+	url = f'https://{url_prefix}.tiktok.com/api/v1/web/project/post/'
 	headers = {
 		'Host': f'{url_prefix}.tiktok.com',
 		'content-type': 'application/json',
@@ -128,7 +129,7 @@ if __name__ == "__main__":
 	parser.add_argument("--tags", nargs='*', default=[], help="List of hashtags for the video")
 	parser.add_argument("--users", nargs='*', default=[], help="List of mentioned users for the video")
 	parser.add_argument("-s", "--schedule_time", type=int, default=0, help="Schedule timestamp for video upload")
-	parser.add_argument("--url_server", type=str, default="us", choices=["www"], help="Specify the prefix of url (www or us)")
+	parser.add_argument("--url_server", type=str, default="www", choices=["www"], help="Specify the prefix of url (www or us)")
 	args = parser.parse_args()
 	# python3 ./uploader.py -i 'your sessionid' -p ./download/test.mp4 -t  测试上传
 	# uploadVideo('your sessionid', './download/test.mp4', '就问你批不批', ['热门'],[])

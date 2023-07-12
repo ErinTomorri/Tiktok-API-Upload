@@ -29,7 +29,7 @@ def uTube(title, des, file):
         'snippet': {
             'title': title,
             'description': des,
-            'categoryId': '42',
+            'categoryId': '24',
             'tags': ['memerap', 'squidwardrap', 'mrkrabsrap', 'planktonrap', 'spongebob']
         },
         'status': {
@@ -104,5 +104,4 @@ def main2():
         Tiktok(title,fileName)
         uTube(title,des,fileName)
 
-    os.remove(fileName)
 main2()

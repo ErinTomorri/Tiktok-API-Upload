@@ -60,10 +60,8 @@ def create(w1,w2,w3,p1,p2,e1,e2):
 
     resize_image_to_1080_width(file)
     resize_image_to_1080_width(file2)
-    resize_image_to_1080_width(file3)
     paste_image_on_black_background(file)
     paste_image_on_black_background(file2)
-    paste_image_on_black_background(file3)
 
     text1 = random.choice(w1)
     text2 = random.choice(w2)
@@ -75,19 +73,30 @@ def create(w1,w2,w3,p1,p2,e1,e2):
     img = Image.open(file)
     I1 = ImageDraw.Draw(img)
     myFont = ImageFont.truetype('Font.otf', 55)
+    x, y = 40, 480
+    shadowColor = (0, 0, 0)
+    thickness = 4
+    I1.text((x - thickness, y - thickness), text1, font=myFont, fill=shadowColor, thick=thickness)
+    I1.text((x + thickness, y - thickness), text1, font=myFont, fill=shadowColor, thick=thickness)
+    I1.text((x - thickness, y + thickness), text1, font=myFont, fill=shadowColor, thick=thickness)
+    I1.text((x + thickness, y + thickness), text1, font=myFont, fill=shadowColor, thick=thickness)
     I1.text((40,480), text1, font=myFont, fill =(255, 255, 255))
     img.save("2Images/images/"+str(0)+".png")
 
     img = Image.open(file2)
     I1 = ImageDraw.Draw(img)
+    x, y = 40, 480
+    shadowColor = (0, 0, 0)
+    thickness = 4
+    I1.text((x - thickness, y - thickness), text2, font=myFont, fill=shadowColor, thick=thickness)
+    I1.text((x + thickness, y - thickness), text2, font=myFont, fill=shadowColor, thick=thickness)
+    I1.text((x - thickness, y + thickness), text2, font=myFont, fill=shadowColor, thick=thickness)
+    I1.text((x + thickness, y + thickness), text2, font=myFont, fill=shadowColor, thick=thickness)
     I1.text((40,480), text2, font=myFont, fill =(255, 255, 255))
     img.save("2Images/images/"+str(1)+".png")
-
-    img = Image.open(file3)
-    img.save("2Images/images/"+str(2)+".png")
 def video(num,p3):
 
-    image_paths = ["2Images/images/0.png", "2Images/images/1.png", "2Images/images/2.png"]
+    image_paths = ["2Images/images/0.png", "2Images/images/1.png"]
     video_path = "Videos/"+p3+"/"+random.choice(os.listdir("Videos/"+p3))
     output_path = "FinalVideos/output"+str(num)+".mp4"
 
